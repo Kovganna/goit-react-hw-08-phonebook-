@@ -43,7 +43,7 @@ export default function App() {
     dispatch(fetchCurrentUser());
   }, [dispatch]);
 
-  return isFetchCurrentUser ? (
+  return !isFetchCurrentUser ? (
     <Loader />
   ) : (
     <div className="Container">
